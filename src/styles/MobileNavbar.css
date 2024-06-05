@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbarmob {
+    background-color: #fd4646; /* Navbar blanca */
+    color: #333;
+    padding: 10px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .top-rowmob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brandmob a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  }
+  
+  .iconsdiv {
+    display: flex;
+    gap: 0px;
+  }
+  
+  .profile-iconmob{
+    font-size: 1.5rem;
+    color: #787374;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px; /* Ajustamos el margen derecho para separar los iconos */
+  }
+  /* Para el icono de búsqueda */
+  .search-iconmob {
+    font-size: 1.5rem;
+    color: #787374;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+  }
+  
+  /* Para el icono de inicio de sesión */
+  .login-iconmob {
+    font-size: 1.5rem;
+    color: #212022;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+  }
+  
+  /* Para el icono de carrito */
+  .cart-iconmob {
+    font-size: 1.5rem;
+    color: #212022;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+  }
+  
+  .search-formmob {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px; /* Separar la barra de búsqueda de la fila superior */
+  }
+  
+  .search-formmob input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    flex: 1;
+  }
+  
+  .search-formmob button {
+    padding: 0.5rem 1rem;
+    background-color: #fff; /* Fondo blanco */
+    color: #6a0dad; /* Texto color violeta */
+    border: 1px solid #6a0dad; /* Borde color violeta */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .search-formmob button:hover {
+    background-color: #6a0dad;
+    color: #fff;
+  }
+  
+  .menu-iconmob {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-iconmob {
+        display: block;
+    }
+  
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .nav-open {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    nav ul.menu {
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    nav ul.menu li {
+        margin: 0;
+        width: 100%;
+        position: relative; /* Ajuste para posicionar correctamente el menú desplegable */
+    }
+  
+    nav ul.menu li a {
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        display: block; /* Convertir los elementos de menú en bloques para separarlos */
+        position: relative; /* Establecer posición relativa para los submenús */
+    }
+  
+    .brandmob {
+        flex: 1;
+        text-align: center;
+    }
+  
+    .search-formmob {
+        order: 2;
+        width: 100%;
+        margin: 1rem 0;
+    }
+  
+    .top-rowmob {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    .iconsmob {
+        flex: 1;
+        justify-content: flex-end;
+    }
+  
+    .dropdown-contentmob {
+        position: absolute;
+        left: calc(100% + 10px);
+        top: 0;
+        width: auto;
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(106, 13, 173, 0.1); /* Sombra violeta */
+        z-index: 1;
+    }
+  
+    .dropdownmob:hover .dropdown-contentmob {
+        display: flex;
+        position: absolute;
+        top: 100%; /* Ajuste para mostrar el submenú debajo del elemento de menú */
+        left: 0;
+        width: 100%; /* Ajuste para que el submenú se extienda por toda la pantalla */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+        border-top: 2px solid #6a0dad; /* Borde superior */
+    }
+  
+    .dropdown-contentmob a {
+        text-align: left;
+        padding: 8px 12px;
+        border: none;
+        display: block; /* Convertir elementos de submenú en bloques */
+        transition: background-color 0.3s, color 0.3s; /* Agregar transición */
+    }
+  
+    .dropdown-contentmob a:hover {
+        background-color: #f0f0f0; /* Cambiar color de fondo al pasar el mouse */
+    }
+  }
+  
+  

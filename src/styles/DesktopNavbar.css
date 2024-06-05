@@ -1,0 +1,132 @@
+/* src/styles/DesktopNavbar.css */
+.navbardesk {
+    background-color: #fd4646; /* Navbar blanca */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra la navbar */
+    padding: 0 10px; /* Ajusta el padding lateral */
+}
+
+.branddesk a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+nav ul.menu li {
+    display: flex;
+    align-items: center; /* Asegura que los elementos del menú se alineen correctamente */
+}
+
+nav ul.menu li a {
+    color: #a6a6a6;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-shadow: 0 0 4px rgba(106, 13, 173, 0.3); /* Sombra violeta */
+    display: flex;
+    align-items: center; /* Alinea texto y flecha */
+}
+
+nav ul.menu li a:hover {
+    background-color: #ec3e3b;
+}
+
+.search-formdesk {
+    display: flex;
+    align-items: center;
+    margin: 0; /* Elimina cualquier margen extra */
+}
+
+.search-formdesk input[type="text"] {
+    padding: 0.4rem 0.8rem; /* Ajusta el relleno para reducir la altura */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    font-size: 1rem; /* Asegura que el tamaño de la fuente coincida */
+}
+
+.search-formdesk button {
+    padding: 0.4rem 0.8rem; /* Ajusta el relleno para reducir la altura */
+    background-color: #fff; /* Fondo blanco */
+    color: #161518; /* Texto color negro */
+    border: 1px solid #000000; /* Borde color negro */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem; /* Asegura que el tamaño de la fuente coincida */
+}
+
+.search-formdesk button:hover {
+    background-color: #a6a6a6;
+    color: #020202;
+}
+
+nav ul.menu li a.menu-buttondesk {
+    color: #a6a6a6; /* Texto gris */
+}
+
+nav ul.menu li a.menu-buttondesk:hover {
+    background-color: #f0f0f0; /* Fondo gris claro al pasar el ratón */
+    border-radius: 20px;
+}
+
+nav ul.menu li a.login-buttondesk {
+    background-color: #fff; /* Fondo blanco */
+    color: #161518; /* Texto color negro */
+    border: 1px solid #161518; /* Borde color negro */
+    border-radius: 20px; /* Bordes redondeados */
+    display: flex;
+    align-items: center;
+    padding: 8px 12px; /* Asegura que el relleno sea consistente */
+}
+
+nav ul.menu li a.login-buttondesk:hover {
+    background-color: #161518;
+    color: #fff;
+}
+
+/* Estilo específico para el menú desplegable */
+.dropdowndesk {
+    position: relative;
+}
+
+.dropdown-contentdesk {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(2, 2, 2, 0.1); /* Sombra negra */
+    border-radius: 4px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-contentdesk a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contentdesk a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdowndesk:hover .dropdown-contentdesk {
+    display: block;
+}
