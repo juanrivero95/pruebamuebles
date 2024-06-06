@@ -23,7 +23,7 @@ const DesktopNavbar = () => {
         <ul className="menu">
           <li><a href="/" className="menu-buttondesk">Inicio</a></li>
           <li className="dropdowndesk">
-            <a href="/productos" className="menu-buttondesk">
+            <a href="/product" className="menu-buttondesk">
               Productos <span>&#9662;</span>
             </a>
             <div className="dropdown-contentdesk">

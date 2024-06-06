@@ -1,18 +1,29 @@
 import React from 'react';
+import styled from 'styled-components';
+import ProductCard from './ProductCard';
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+`;
+
+const products = [
+  { id: 1, name: 'Producto 1', price: '$10.00', image: 'https://via.placeholder.com/150' },
+  { id: 2, name: 'Producto 2', price: '$20.00', image: 'https://via.placeholder.com/150' },
+  // Agrega más productos según sea necesario
+];
 
 const CheckoutPage = () => {
   return (
     <div>
-      <h2>Finalizar Compra</h2>
-      <form>
-        <label>Nombre:</label>
-        <input type="text" />
-        <label>Dirección:</label>
-        <input type="text" />
-        <label>Tarjeta de Crédito:</label>
-        <input type="text" />
-        <button>Realizar Pago</button>
-      </form>
+      <h1>Catálogo de Productos</h1>
+      <Grid>
+        {products.map(product => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </Grid>
     </div>
   );
 };

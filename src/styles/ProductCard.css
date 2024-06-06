@@ -1,0 +1,40 @@
+/* productcard.css */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .product-name {
+    margin-top: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(49, 47, 47); /* Cambiar el color del texto a negro */
+    text-decoration: none !important; /* Quitar el subrayado */
+    cursor: pointer;
+  }
+ 
+
+  
+  .price {
+    margin-top: 8px;
+    font-size: 10px;
+    color: rgb(197, 89, 89); /* Cambiar el color del texto a negro */
+    text-decoration: none; /* Esto oculta el subrayado */
+  }
+  

@@ -39,7 +39,7 @@ const MobileNavbar = () => {
         <ul className="menu">
           <li><a href="/" className="menu-buttonmob">Inicio</a></li>
           <li className="dropdownmob">
-            <a href="/productos" className="menu-buttonmob">Productos &#9662;</a>
+            <a href="/product" className="menu-buttonmob">Productos &#9662;</a>
             <div className="dropdown-contentmob">
               <a href="/">Categoría 1</a>
               <a href="/">Categoría 2</a>

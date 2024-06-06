@@ -6,6 +6,7 @@ import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import ProductDetailPage from './pages/ProductDetailPage';
 import ContactUs from './pages/ContactUs';
 import CheckoutPage from './pages/CheckoutPage';
 import Header from './components/Header';
@@ -22,12 +23,13 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/product" element={<ProductPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/contacto" element={<ContactUs />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/producto/:productId" element={<ProductDetailPage />} />
       </Routes>
       <Footer />
     </Router>
